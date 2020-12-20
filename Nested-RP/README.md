@@ -2,7 +2,7 @@
 ##### Nested Resource Pool creation in Vsphere
 
 ##### 01. RP creation in vSphere.
-![nested-rp](../images/nested-rp.png)
+![nested-rp2](../images/nested-rp2.png)
 
     - PKS-RP
       - PKS-RP-AZ01
@@ -239,4 +239,4 @@
     
     Use 'pks cluster tkgi-cluster' to monitor the state of your cluster
     
-![after-rp-tkgi-cluster](../images/after-rp-tkgi-cluster.png)
+![after-rp-tkgi-cluster2](../images/after-rp-tkgi-cluster2.png)
