@@ -2,7 +2,7 @@
 ##### Nested Resource Pool creation in Vsphere
 
 ##### 01. RP creation in vSphere.
-![ex_screenshot](./img/nested-rp.png)
+![nested-rp](../images/nested-rp.png)
 
     - PKS-RP
       - PKS-RP-AZ01
@@ -10,7 +10,7 @@
       - PKS-PR-AZ03
             
 ##### 02. Create AZ on Opsmanager
-![ex_screenshot](./img/bosh-create-az.png)
+![bosh-create-az](../images/bosh-create-az.png)
 
     # create AZ
     opsman UI > bosh > Create Availability Zones > add
@@ -239,4 +239,4 @@
     
     Use 'pks cluster tkgi-cluster' to monitor the state of your cluster
     
-![ex_screenshot](./img/after-rp-tkgi-cluster.png)
+![after-rp-tkgi-cluster](../images/after-rp-tkgi-cluster.png)
