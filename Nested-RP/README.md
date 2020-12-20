@@ -2,12 +2,16 @@
 ##### Nested Resource Pool creation in Vsphere
 
 ##### 01. RP creation in vSphere.
+![ex_screenshot](./img/nested-rp.png)
+
     - PKS-RP
       - PKS-RP-AZ01
       - PKS-PR-AZ02
       - PKS-PR-AZ03
             
 ##### 02. Create AZ on Opsmanager
+![ex_screenshot](./img/bosh-create-az.png)
+
     # create AZ
     opsman UI > bosh > Create Availability Zones > add
     
@@ -214,3 +218,25 @@
 
 
 ##### 09. Create TKGI cluster
+    ubuntu@ubuntu-210:~$ tkgi create-cluster tkgi-cluster -e tkgi-cluster.haas-210.pez.pivotal.io -p PKS-RP-small
+    
+    PKS Version:              1.9.1-build.4
+    Name:                     tkgi-cluster
+    K8s Version:              1.18.8
+    Plan Name:                PKS-RP-small
+    UUID:                     c69b4c2f-699e-4f13-9e11-5b83a9cf9841
+    Last Action:              CREATE
+    Last Action State:        in progress
+    Last Action Description:  Creating cluster
+    Kubernetes Master Host:   tkgi-cluster.haas-210.pez.pivotal.io
+    Kubernetes Master Port:   8443
+    Worker Nodes:             3
+    Kubernetes Master IP(s):  In Progress
+    Network Profile Name:
+    Kubernetes Profile Name:
+    Compute Profile Name:
+    Tags:
+    
+    Use 'pks cluster tkgi-cluster' to monitor the state of your cluster
+    
+![ex_screenshot](./img/after-rp-tkgi-cluster.png)
