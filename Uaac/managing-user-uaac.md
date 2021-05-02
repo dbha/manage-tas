@@ -30,13 +30,13 @@
     Context: admin, from client admin
     
     # add user 
-    ubuntu@opsmanager:~$ uaac user add dbha -p xxxx --emails dbha@example.com
+    ubuntu@opsmanager:~$ uaac user add testuser -p xxxx --emails testuser@example.com
     
     ubuntu@opsmanager:~$ uaac user get
     User name:  ^C
     Interrupt:
     
-    ubuntu@opsmanager:~$ uaac user get dbha
+    ubuntu@opsmanager:~$ uaac user get testuser
       id: d8358dd5-ae9f-4e14-8477-551fbdb7c263
       meta
         version: 0
@@ -45,7 +45,7 @@
       name
       emails:
       -
-        value: dbha@example.com
+        value: testuser@example.com
         primary: false
       groups:
       -
@@ -86,7 +86,7 @@
         zoneid: uaa
         passwordlastmodified: 2021-05-02T05:13:49.000Z
  
-    ubuntu@opsmanager:~$ uaac member add cloud_controller.admin dbha
+    ubuntu@opsmanager:~$ uaac member add cloud_controller.admin testuser
     success
     ubuntu@opsmanager:~$
     ubuntu@opsmanager:~$
@@ -96,7 +96,7 @@
     ubuntu@ubuntu-218:~/tas$ cf login -a api.sys.tas.haas-218.pez.pivotal.io --skip-ssl-validation
     API endpoint: api.sys.tas.haas-218.pez.pivotal.io
     
-    Email: dbha
+    Email: testuser
     
     Password:
     Authenticating...
